@@ -1,0 +1,54 @@
+{
+    "DASHBOARD":{
+        "navbar-visit": "Kunjungi Melon Editor",
+        "hero-title": "PAKET DAN HARGA",
+        "hero-card-standard-desc": "Mulailah berkreasi dengan Melon Editor versi gratis",
+        "hero-card-standard-price": "Free",
+        "hero-card-standard-button": "Mulai",
+        "hero-card-plus-desc": "Lebih banyak fungsi dan sumber daya untuk proyek Melon Editor Anda",
+        "hero-card-plus-price": "bln",
+        "hero-card-plus-button": "Langganan",
+        "hero-card-pro-desc": "Solusi yang Anda perlukan untuk membuat game dengan Melon Editor",
+        "hero-card-pro-price": "bln",
+        "hero-card-pro-button": "Langganan"
+    },
+    "COMPARATION": {
+        "title":"Perbandingan Fitur",
+        "1.1": "Ekspor/impor seluruh proyek dalam bentuk .meprj",
+        "1.2": "Ekspor/impor beberapa file dalam bentuk .mebdl",
+        "1.3": "Ekspor proyek yang sudah dibangun untuk browser",
+        "1.4": "Ekspor proyek yang sudah dibangun ke server melon gaming (dihosting)",
+        "1.5": "Ekspor proyek yang sudah dibangun untuk versi game instan FB",
+        "1.6": "Ekspor proyek yang sudah dibangun untuk penerapan Native iOS/Android",
+        "1.7": "Ekspor proyek yang sudah dibangun untuk penerapan Native Desktop",
+        "1.8": "Unggah game langsung ke game instan FB",
+        "2.1": "Fitur Sosial (berbagi game, permintaan game, bot game)",
+        "2.2": "Monetisasi Iklan (Interstisial, Video Iklan Berhadiah)",
+        "2.3": "Pembelian dalam aplikasi",
+        "2.4": "Papan Peringkat (Game Instan)",
+        "3.1": "Monetisasi berbasis iklan di iOS/Android",
+        "3.2": "Pembelian dalam aplikasi di iOS/Android",
+        "3.3": "Monetisasi berbasis iklan di Facebook Instant Games",
+        "3.4": "Pembelian dalam aplikasi di Facebook Messenger",
+        "4.1": "Jelajahi Konten",
+        "4.2": "Impor Aset Gratis",
+        "4.3": "Impor Aset Berbayar",
+        "4.4": "Buka Toko",
+        "4.5": "Meningkatkan Batas Produk/Toko",
+        "4.6": "Meningkatkan Batas Ukuran Aset yang Dijual MB/GB",
+        "4.7": "Harga Khusus Aset"
+    },
+    "PAYMENT": {
+        "payment-back": "Kembali ke Paket dan Harga",
+        "payment-select": "Bulan Langganan",
+        "payment-month": "bln",
+        "payment-until": "Anda akan ditingkatkan menjadi PLUS, hingga:",
+        "payment-summary": "Ringkasan Pesanan",
+        "payment-total": "Total Estimasi:"
+    },
+    "FOOTER": {
+        "footer-join": "Bergabung dengan kami di",
+        "footer-copyright": "© Hak Cipta 2017-sekarang"
+    }
+
+}

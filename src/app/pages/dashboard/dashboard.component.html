@@ -1,0 +1,73 @@
+<div class="">
+    <p class="hidden text-[#629B3D] text-[#F7A90B] text-[#E27614] border-[#629B3D] border-[#F7A90B] border-[#E27614] bg-[#629B3D] bg-[#F7A90B]"></p>
+    <div id="hero-page" class="px-[15%] py-6">
+        <p class="text-[55px] font-medium text-center mt-8 text-white">{{"DASHBOARD.hero-title" | translate}}</p>
+        <div class="grid grid-cols-3 gap-4 mt-6 items-center">
+            @for( cardBody of choosePlanBody; track cardBody.image){
+                <div class="bg-white rounded-2xl border-4 border-[#{{cardBody.border_color}}] p-4 shadow-lg text-center hover:-translate-y-1 duration-300 border-grey-200 shadow-second/30">
+                    <img src="/public/img/{{cardBody.image}}" class="m-auto h-[80px]" alt="">
+                    <p class="text-2xl text-[#{{cardBody.border_color}}] mt-1">{{cardBody.name}}</p>
+                    <p class="my-4 text-black/80 w-full bg-[#f1f1f2] rounded-xl py-2.5 px-3 text-sm">{{cardBody.comparison}}</p>
+                    <p class="mt-4 text-2xl">{{cardBody.price}}</p>
+                
+                    @if(cardBody.price !== "Free"){
+                        <button (click)="CheckLogin(cardBody.link, cardBody.price)" class="flex gap-2 items-center mt-6 mb-4 rounded-full m-auto font-semibold text-white px-8 py-1.5 bg-gradient-to-t to-[#F7A90B] to-50% from-[#E27614]">
+                            {{cardBody.button_value}}
+                            <i class="uil uil-arrow-right text-xl"></i>
+                        </button>
+                    }@else {
+                        <button (click)="CheckLogin(cardBody.link, cardBody.price)" class="flex gap-2 items-center mt-6 mb-4 rounded-full m-auto font-semibold text-white px-8 py-1.5 bg-gradient-to-t from-[#629B3D] to-50% to-[#92c63d]">
+                            {{cardBody.button_value}}
+                            <i class="uil uil-arrow-right text-xl"></i>
+                        </button>
+                    }
+                </div>
+            }
+        </div>
+        <br>
+    </div>
+
+    <div class="bg-white px-[15%] py-20">
+        <p class="text-4xl font-medium">{{"COMPARATION.title" | translate}}</p>
+
+        <div class="mt-6 divide-y">
+            @for(feature of comparisonContent; track feature.name){
+                <div class="grid grid-cols-12 bg-primary/80 divide-x text-white font-bold py-2 rounded-t-lg">
+                    <p class="col-span-6 text-center">{{feature.name}}</p>
+                    <p class="col-span-2 text-center">Starndard</p>
+                    <p class="col-span-2 text-center">Plus</p>
+                    <p class="col-span-2 text-center">Pro</p>
+                </div>
+                @for(contentItem of feature.content; track contentItem.title){
+                    <div class="grid grid-cols-12 divide-x py-2 hover:bg-[#f5f5f5]">
+                        <p class="col-span-6 px-4 flex items-center gap-2 text-sm">{{contentItem.title}}</p>
+                        <p class="col-span-2 text-center text-xl"><i class="uil {{contentItem.free?'uil-check text-primary':'uil-times text-red-500'}}"></i></p>
+                        <p class="col-span-2 text-center text-xl"><i class="uil {{contentItem.plus?'uil-check text-primary':'uil-times text-red-500'}}"></i></p>
+                        <p class="col-span-2 text-center text-xl"><i class="uil {{contentItem.pro?'uil-check text-primary':'uil-times text-red-500'}}"></i></p>
+                    </div>
+                }
+                <br>
+            }
+        </div>
+    </div>
+</div>
+
+
+
+<!-- POPUP -->
+<div id="popup-login" class="hidden fixed top-0 bottom-0 right-0 left-0 bg-black/50 z-[100] flex items-center justify-center">
+    <div class="px-10 py-6 rounded-2xl bg-white">
+        <div class="flex justify-between pb-4">
+            <span></span>
+            <i class="cursor-pointer uil uil-multiply button-close"></i>
+        </div>
+        <div class="flex items-start gap-10">
+            <img src="/public/img/plus_member.png" width="70px" alt="">
+            <div class="">
+                <p class="text-xl font-medium">Login Required</p>
+                <p class="py-6">Please Login to Your Account first<br>to proceed the Subscription</p>
+                <button (click)="goToMelonEditor()" class="text-sm font-semibold px-8 py-2 mt-4 bg-primary text-white rounded-lg flex items-center gap-2">Open Melon Editor <i class="uil uil-external-link-alt"></i></button>
+            </div>
+        </div>
+    </div>
+</div>

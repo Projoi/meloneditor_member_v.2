@@ -1,0 +1,11 @@
+<nav class="px-[15%] bg-white py-4 flex items-center justify-between shadow-lg w-full sticky top-0 z-[99]">
+    <a routerLink="/"><img width="100px" src="/public/img/logo.png" alt=""></a>
+    <div class="flex gap-6 items-center">
+        <a href="https://editor.melongaming.com/" class="flex items-center gap-2 bg-gradient-to-r from-[#97c83c] to-[#59b147] px-10 py-2 text-white font-medium rounded-full text-sm"><i class="uil uil-external-link-alt"></i> {{'DASHBOARD.navbar-visit' | translate}}</a>
+        @if(SELECTED_LANGUAGE == "en"){
+            <button (click)="ChangeLang($event)" value="idn" class="py-2 px-6 font-medium text-sm rounded-full flex items-center gap-2 bg-gradient-to-r from-[#97c83c] to-[#59b147] text-white">Switch to <img width="25px" src="/public/img/INDO_FLAG.svg" alt=""></button>
+        }@else {
+            <button (click)="ChangeLang($event)" value="en" class="py-2 px-6 font-medium text-sm rounded-full flex items-center gap-2 bg-gradient-to-r from-[#97c83c] to-[#59b147] text-white">Ubah ke <img width="25px" src="/public/img/UK_FLAG.png" alt=""></button>
+        }
+    </div>
+</nav>

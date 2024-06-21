@@ -1,0 +1,53 @@
+{
+    "DASHBOARD":{
+        "navbar-visit": "Visit Melon Editor",
+        "hero-title": "PLANS AND PRICING",
+        "hero-card-standard-desc": "Start creating with the free version of Melon Editor",
+        "hero-card-standard-price": "Free",
+        "hero-card-standard-button": "Get-Started",
+        "hero-card-plus-desc": "More functionality and resources to power for your Melon Editor projects",
+        "hero-card-plus-price": "mo",
+        "hero-card-plus-button": "Subscribe",
+        "hero-card-pro-desc": "A complete solutions for all you need to make a game with Melon Editor",
+        "hero-card-pro-price": "mo",
+        "hero-card-pro-button": "Subscribe"
+    },
+    "COMPARATION":{
+        "title":"Feature Comparation",
+        "1.1":"Export/import a whole project in the form of .meprj",
+        "1.2":"Export/import some files in the form of .mebdl",
+        "1.3":"Export the build project for browser",
+        "1.4":"Export the build projectto melon gaming server (hosted)",
+        "1.5":"Export the build project for FB instant games version",
+        "1.6":"Export the build project for Native ios/Android deployment",
+        "1.7":"Export the build project for Native Desktop deployment",
+        "1.8":"Upload games directly to FB instant games",
+        "2.1":"Social Features (game sharing, game request, game bot)",
+        "2.2":"Ads Monetnization (Interstiial, Rewarded Video ad)",
+        "2.3":"In-app purchase",
+        "2.4":"Leaderboards (instant Games)",
+        "3.1":"Ads based monetization on iOS/Android",
+        "3.2":"in-App purchases on iOS/Android",
+        "3.3":"Ads based monetization on Facebook Instant Games",
+        "3.4":"in-App purchases on Facebook messenger",
+        "4.1":"Browse Content",
+        "4.2":"Import Free Assets",
+        "4.3":"Import Paying Assets",
+        "4.4":"Open Store",
+        "4.5":"Increases Limit Product/Store",
+        "4.6":"Increases Limit Sell Asset Size MB/GB",
+        "4.7":"Special Price Asset"
+    },
+    "PAYMENT":{
+        "payment-back": "Back to Membership",
+        "payment-select": "Month Subscription",
+        "payment-month": "mo",
+        "payment-until": "You will be upgraded to PLUS, until:",
+        "payment-summary": "Order Summary",
+        "payment-total": "Estimate Total:"
+    },
+    "FOOTER":{
+        "footer-join": "Join our",
+        "footer-copyright": "© Copyright 2017-present"
+    }
+}
